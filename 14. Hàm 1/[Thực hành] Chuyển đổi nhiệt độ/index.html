@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Bảng chuyển đổi nhiệt độ </h1>
+        <input type="text" placeholder="nhập Độ F" id="input">
+        <button type="button" onclick="chuyendoi()"> Chuyển đổi</button>
+        <p id="display">C = </p>
+    </div>
+    <script>
+        document.getElementById('input');
+
+        let chuyendoi = () => {
+            let F = document.getElementById('input').value;
+            let C = 'C = ' + (F - 32)/1.8;  
+            document.getElementById('display').innerHTML = C;
+            
+        }
+        
+    </script>
+</body>
+</html>
